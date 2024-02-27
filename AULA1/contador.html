@@ -1,0 +1,18 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contador</h1>
+    <p id="contador">0</p>
+    <button onclick="somar()">adicionar</button>
+</body>
+<script>
+    let contador=0;
+    function somar(){
+        contador++
+        document.getElementById("contador").innertext = contador;
+    }
+</script>
+</html>
