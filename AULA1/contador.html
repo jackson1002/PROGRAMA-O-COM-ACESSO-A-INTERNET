@@ -1,18 +1,26 @@
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
+<html>
+    <head>
+        <meta charset="UTF-3">
+        <title>CONTADOR</title>
+    </head>
 <body>
     <h1>Contador</h1>
     <p id="contador">0</p>
-    <button onclick="somar()">adicionar</button>
+    <button onclick="somar()" >Adicionar</button>
+    <button onclick="subtrair()" >Subtrair</button>
 </body>
 <script>
-    let contador=0;
-    function somar(){
+    let contador = 0;
+
+    function somar() {
         contador++
-        document.getElementById("contador").innertext = contador;
+        document.getElementById("contador").innerText = contador;
+    }
+
+    function subtrair() {
+        contador--
+        document.getElementById("contador").innerText = contador;
     }
 </script>
+    
 </html>
