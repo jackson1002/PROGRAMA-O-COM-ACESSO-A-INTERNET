@@ -10,7 +10,10 @@ const altura = 1.62; // (CONST) Valor Constante(o valor de altura não pode muda
 
 let bol = true /// Boolean
 let lista = ["banana", "maçã", "uva"]; // Lista
-let objeto = {nome: "Maria", idade: 18}; // Objeto
+let objeto = {nome: "Maria", idade: 18}; // Objeto (dicionário)
+
+
+
 
 // Operadores Aritiméticos
 let a = 10;
@@ -61,9 +64,11 @@ let hora = 12;
 
 if(hora < 12){
     console.log("bom dia!");
-} else if ( hora >= 12 && hora <= 18) {
+} 
+else if ( hora >= 12 && hora <= 18) {
     console.log("boa tarde!");
-} else {
+} 
+else {
     console.log("boa noite!");
 }
 
@@ -86,3 +91,10 @@ while (contador < 5){
 //str = 'Olá,Mundo'
 //bool = true
 // obj = {chave:'valor'}
+
+//Encremento
+
+valor1 = 5;
+
+total = ++valor1
+alert(total)

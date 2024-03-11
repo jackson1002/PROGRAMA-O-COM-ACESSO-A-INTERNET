@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="alert('Olá INFO4V')">
+    
+    <div style="margin-top:100px; text-align:center" >
+        <img src="IMG/mouse_sad.png" alt="mouse sad" onclick="TouchMouse()" id="mouse" width="300px" height="300px">
+    </div>
+</body>
+<script>
+    function TouchMouse(){
+        let username = prompt("Qual seu nome?","Digite aqui."); 
+        if (username){
+            alert("Olá" + " " + username);
+            document.getElementById("mouse").src="IMG/mouse_happy.png"
+        }
+    }
+</script>
+</html>
