@@ -20,11 +20,15 @@
 <script>
     function Idade(){
         ano_nascimento = parseInt(document.getElementById("ano_nascimento").value);
-
-        idade = 2024 - ano_nascimento;
+        var ano_atual = new Date().getFullYear();
+        idade = ano_atual - ano_nascimento;
 
         alert("você tem:" + " " + idade + " " + "anos");
 
         document.getElementById("resultado").innerHTML=idade + " " +"anos";
     }
+
+    //new Date().getFullYear() serve pra pegar o ano atual e portanto colocamos em uma variável
+
+    //CONSIDERAR O MÊS DE NASCIMENTO PRA GARANTIR QUE COMPLETOU ANO OU NÃO
 </script>
