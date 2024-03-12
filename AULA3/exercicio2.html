@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Digite seu ano de nascimento:</label>
+        <input id= "ano_nascimento" type="number" name="nascimento">
+        <button type="button" onclick="Idade()">Mostrar idade</button>
+    </form>
+
+    <h1 id="resultado">
+
+    </h1>
+</body>
+</html>
+<script>
+    function Idade(){
+        ano_nascimento = parseInt(document.getElementById("ano_nascimento").value);
+
+        idade = 2024 - ano_nascimento;
+
+        alert("você tem:" + " " + idade + " " + "anos");
+
+        document.getElementById("resultado").innerHTML=idade + " " +"anos";
+    }
+</script>

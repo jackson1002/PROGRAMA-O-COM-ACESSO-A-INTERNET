@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Digite o numero 1:</label>
+        <input  id="n1" type="number">
+        <label>Digite o numero 2:</label>
+        <input id="n2" type="number">
+    </form>
+
+    <h1 id="resultado"></h1>
+
+    <button type="button" onclick="Soma()">Soma</button>
+    <button type="button" onclick="Subtracao()">Subtração</button>
+    <button type="button" onclick="Multiplicacao()">Multiplicação</button>
+    <button  type="button"onclick="Divisao()">Divisão</button>
+
+</body>
+<script>
+    function Soma(){
+         var n1 = parseInt(document.getElementById("n1").value);
+         var n2 = parseInt(document.getElementById('n2').value);
+         var soma = n1 + n2;
+         document.getElementById("resultado").innerHTML = soma;
+    }
+
+    function Subtracao(){
+        var n1 = parseInt(document.getElementById("n1").value);
+        var n2 = parseInt(document.getElementById("n2").value);
+
+        var subtracao = n1 - n2;
+
+        document.getElementById("resultado").innerHTML = subtracao;
+    }
+   
+    function Multiplicacao(){
+        var n1 = parseInt(document.getElementById("n1").value);
+        var n2 = parseInt(document.getElementById("n2").value);
+
+        var multiplicacao = n1 * n2;
+
+        document.getElementById("resultado").innerHTML = multiplicacao;
+    }
+
+    function Divisao(){
+        var n1 = parseInt(document.getElementById("n1").value);
+        var n2 = parseInt(document.getElementById("n2").value);
+
+        divisao = n1 / n2;
+
+        document.getElementById("resultado").innerHTML = divisao;
+    }
+
+
+/* No formulário,precisamos colocar id nos inputs pra identifica-los e coloque um id no h1 também,pois será onde colocaremos
+ nossas respostas;coloque o type do input como number,pois não permitirá que o usuario digite apenas números;
+ é importante que no button coloquemos type sendo button,pois 
+senão especificamos o tipo do botão ele por padrão será submit o que significa que quando clicarmos nele ele irá enviar o resultado 
+do formulário e irá recarregar a página e iremos perder o estado atual da página;por fim usamos o onclick em cada botão pra direcionar
+pra a função especificar de cada botão;dentro do js usamos o parseInt pra converter o que o usuario digitou pra inteiro e como parametro
+colocamos o que o usuario digitou através do document.getElementById(nome do id que corresponde ao campo de resposta do usuario,no input
+no caso);por último colocamos o valor de cada operação lá no html através do js,faznedo:document.getElementById(nome do id que corresponde
+ao id da tag no html que colocaremos as respostas,nesse caso o h1).*/
+
+
+      
+</script>
+</html>
