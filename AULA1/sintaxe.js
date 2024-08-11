@@ -49,7 +49,7 @@ Igualdade solta
 
 Igualdade Estrita(leva em  consideração o tipo de dado)
 
- 5 = '5' (False) 
+ 5 === '5' (False) 
 
  0 == false (True)
  0 === false (false)
