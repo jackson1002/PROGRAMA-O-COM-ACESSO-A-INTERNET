@@ -10,7 +10,20 @@ total = --valor1; //subtrai o decremento em 1
 alert(total);
 
 
+//&&
+//"e" lógico
 
+if (house.size == "big" && house.colour == "blue"){
+    house.contains = "bear";
+}
+
+// ||
+
+//"ou" lógico
+
+if (cor == "red" || cor == "blue"){
+    // cor é vermelha OU azul
+}
 
 
 
