@@ -1,2 +1,0 @@
-Permite atualizações na interface do usuário que precisam ser feitas em
-tempo real e de forma rápida.usa o DOM  e o Virtual DOM.
